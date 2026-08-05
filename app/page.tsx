@@ -2,11 +2,7 @@ import Reveal from "@/components/ui/Reveal";
 import Button from "@/components/ui/Button";
 import SectionEyebrow from "@/components/ui/SectionEyebrow";
 import ServiceList from "@/components/sections/ServiceList";
-import WorkGrid from "@/components/sections/WorkGrid";
-import ClientMarquee from "@/components/sections/ClientMarquee";
-import StatBlock from "@/components/sections/StatBlock";
 import { services } from "@/data/services";
-import { portfolioItems } from "@/data/portfolio";
 
 export default function HomePage() {
   return (
@@ -40,7 +36,7 @@ export default function HomePage() {
           </Reveal>
           <Reveal delay={240}>
             <div className="mt-10 flex flex-wrap items-center gap-5">
-              <Button href="/portfolio" variant="gold">Explore Our Work</Button>
+              <Button href="/services" variant="gold">Explore Our Work</Button>
               <Button href="/contact" variant="outline">Talk to Us</Button>
             </div>
           </Reveal>
@@ -152,20 +148,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* FEATURED WORK */}
-      <section className="bg-ivory py-28 lg:py-36">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <Reveal className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-14">
-            <div>
-              <SectionEyebrow>OUR WORK</SectionEyebrow>
-              <h2 className="font-display text-4xl lg:text-5xl leading-[1.1] text-ink font-light">Ideas transformed into impact.</h2>
-            </div>
-            <a href="/portfolio" className="text-ink text-sm font-medium border-b border-gold pb-1 w-fit">View All Work</a>
-          </Reveal>
-          <WorkGrid items={portfolioItems.slice(0, 6)} />
-        </div>
-      </section>
-
       {/* WHY VISION MEDIA */}
       <section className="bg-charcoal py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
@@ -179,44 +161,6 @@ export default function HomePage() {
               </Reveal>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* IMPACT */}
-      <section className="bg-ivory py-24 lg:py-32 border-b border-ink/10">
-        <StatBlock />
-      </section>
-
-      {/* CLIENTS */}
-      <section className="bg-ivory py-24 lg:py-28 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10 mb-12">
-          <Reveal>
-            <SectionEyebrow>CLIENTS</SectionEyebrow>
-            <h2 className="font-display text-3xl lg:text-4xl text-ink font-light">Trusted across sectors.</h2>
-          </Reveal>
-        </div>
-        <Reveal>
-          <ClientMarquee />
-        </Reveal>
-      </section>
-
-      {/* TESTIMONIALS */}
-      <section className="bg-ivory pb-28 lg:pb-36">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <Reveal className="border border-ink/10 p-10 lg:p-16 relative">
-            <span className="font-display text-7xl text-gold/30 absolute top-6 left-8 select-none">&ldquo;</span>
-            <p className="font-display text-2xl lg:text-3xl text-ink font-light leading-snug max-w-2xl relative">
-              Client testimonial placeholder — real feedback from Vision Media Communications clients will be
-              featured here once supplied.
-            </p>
-            <div className="mt-8 flex items-center gap-4">
-              <div className="w-11 h-11 rounded-full bg-navy/10" />
-              <div>
-                <p className="text-ink text-sm font-medium">Client Name — Placeholder</p>
-                <p className="text-ink/50 text-xs">Organization / Title — Placeholder</p>
-              </div>
-            </div>
-          </Reveal>
         </div>
       </section>
 

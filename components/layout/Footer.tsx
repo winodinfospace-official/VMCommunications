@@ -25,27 +25,25 @@ export default function Footer() {
             <ul className="space-y-3 text-ivory/55 text-sm">
               <li><Link href="/about" className="hover:text-gold transition-colors">About</Link></li>
               <li><Link href="/services" className="hover:text-gold transition-colors">Services</Link></li>
-              <li><Link href="/portfolio" className="hover:text-gold transition-colors">Portfolio</Link></li>
+              <li><Link href="/government-iec" className="hover:text-gold transition-colors">Government IEC</Link></li>
               <li><Link href="/careers" className="hover:text-gold transition-colors">Careers</Link></li>
             </ul>
           </div>
 
           <div className="md:col-span-2">
-            <p className="text-ivory text-xs tracking-[0.2em] mb-5">EXPLORE</p>
+            <p className="text-ivory text-xs tracking-[0.2em] mb-5">CONTACT</p>
             <ul className="space-y-3 text-ivory/55 text-sm">
-              <li><Link href="/government-iec" className="hover:text-gold transition-colors">Government IEC</Link></li>
-              <li><Link href="/clients" className="hover:text-gold transition-colors">Clients</Link></li>
-              <li><Link href="/blog" className="hover:text-gold transition-colors">Blog</Link></li>
-              <li><Link href="/contact" className="hover:text-gold transition-colors">Contact</Link></li>
+              <li><Link href="/contact" className="hover:text-gold transition-colors">Get in Touch</Link></li>
             </ul>
           </div>
 
           <div className="md:col-span-4">
             <p className="text-ivory text-xs tracking-[0.2em] mb-5">GET IN TOUCH</p>
             <ul className="space-y-3 text-ivory/55 text-sm">
-              <li>Office Address — Placeholder, To Be Supplied</li>
-              <li>+91 XXXXX XXXXX — Placeholder</li>
-              <li>hello@visionmediacommunications.example — Placeholder</li>
+              <li>#T4/D, 1st Main Road, Peenya Police Station Road, Peenya Industrial Area, 1st Stage, Peenya, Bengaluru - 560 058</li>
+              <li>+91 93435 43773</li>
+              <li>+91 99646 01753</li>
+              <li>visionmediacommunications2026@gmail.com</li>
             </ul>
             <div className="flex items-center gap-4 mt-6">
               <a href="#" aria-label="Instagram" className="text-ivory/50 hover:text-gold transition-colors">IG</a>

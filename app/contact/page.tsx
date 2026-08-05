@@ -15,15 +15,20 @@ export default function ContactPage() {
           <div className="lg:col-span-5 space-y-10">
             <Reveal>
               <p className="text-blue text-xs tracking-[0.3em] mb-3">OFFICE</p>
-              <p className="text-ink/70 text-[15px]">Office Address — Placeholder, to be supplied by client</p>
+              <p className="text-ink/70 text-[15px]">
+                #T4/D, 1st Main Road, Peenya Police Station Road,
+                <br />
+                Peenya Industrial Area, 1st Stage, Peenya, Bengaluru - 560 058
+              </p>
             </Reveal>
             <Reveal delay={60}>
               <p className="text-blue text-xs tracking-[0.3em] mb-3">PHONE</p>
-              <p className="text-ink/70 text-[15px]">+91 XXXXX XXXXX — Placeholder</p>
+              <p className="text-ink/70 text-[15px]">+91 93435 43773</p>
+              <p className="text-ink/70 text-[15px]">+91 99646 01753</p>
             </Reveal>
             <Reveal delay={120}>
               <p className="text-blue text-xs tracking-[0.3em] mb-3">EMAIL</p>
-              <p className="text-ink/70 text-[15px]">hello@visionmediacommunications.example — Placeholder</p>
+              <p className="text-ink/70 text-[15px]">visionmediacommunications2026@gmail.com</p>
             </Reveal>
             <Reveal delay={180} className="aspect-video bg-navy/5 border border-ink/10 flex items-center justify-center">
               <p className="text-ink/35 text-xs tracking-[0.2em]">MAP EMBED — PLACEHOLDER (add once address confirmed)</p>

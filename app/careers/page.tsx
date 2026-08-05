@@ -28,7 +28,7 @@ export default function CareersPage() {
                 Send us your profile for future opportunities — we&apos;ll reach out when a role opens that fits.
               </p>
               <a
-                href="mailto:careers@visionmediacommunications.example"
+                href="mailto:visionmediacommunications2026@gmail.com"
                 className="inline-flex mt-8 text-ink text-sm font-medium border-b border-gold pb-1"
               >
                 Send Your Profile

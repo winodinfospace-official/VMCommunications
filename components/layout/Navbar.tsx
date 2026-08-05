@@ -8,9 +8,6 @@ const links = [
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
   { href: "/government-iec", label: "Government IEC" },
-  { href: "/portfolio", label: "Portfolio" },
-  { href: "/clients", label: "Clients" },
-  { href: "/blog", label: "Blog" },
   { href: "/careers", label: "Careers" },
   { href: "/contact", label: "Contact" },
 ];
