@@ -1,10 +1,26 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import PageHero from "@/components/sections/PageHero";
 import Reveal from "@/components/ui/Reveal";
 import SectionEyebrow from "@/components/ui/SectionEyebrow";
 import Button from "@/components/ui/Button";
 
 export const metadata: Metadata = { title: "About — Vision Media Communications" };
+
+const partners = [
+  {
+    name: "Hanumatharaja Y K",
+    role: "Proprietor",
+    photo: "/team/hanumantharaja.jpg",
+    bio: "",
+  },
+  {
+    name: "Dr. Shalini R",
+    role: "Proprietor",
+    photo: "/team/shalini.jpg",
+    bio: "Communications and digital media professional with expertise in strategic communication, IEC campaigns, content, research and social media.",
+  },
+];
 
 export default function AboutPage() {
   return (
@@ -53,6 +69,29 @@ export default function AboutPage() {
               <Reveal key={item.t} delay={i * 80}>
                 <p className="font-display text-2xl text-ink mb-3">{item.t}</p>
                 <p className="text-ink/60 text-[15px] leading-relaxed">{item.d}</p>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-ivory pb-24 lg:pb-32">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <Reveal>
+            <SectionEyebrow>LEADERSHIP</SectionEyebrow>
+            <h2 className="font-display text-4xl lg:text-5xl text-ink font-light max-w-2xl">
+              Partners.
+            </h2>
+          </Reveal>
+          <div className="grid sm:grid-cols-2 gap-10 mt-14 max-w-3xl">
+            {partners.map((p, i) => (
+              <Reveal key={p.name} delay={i * 100}>
+                <div className="relative aspect-[4/5] mb-6 overflow-hidden bg-navy">
+                  <Image src={p.photo} alt={p.name} fill className="object-cover" />
+                </div>
+                <p className="font-display text-xl text-ink">{p.name}</p>
+                <p className="text-gold text-xs tracking-[0.2em] mt-1 mb-3">{p.role.toUpperCase()}</p>
+                {p.bio && <p className="text-ink/60 text-sm leading-relaxed">{p.bio}</p>}
               </Reveal>
             ))}
           </div>
