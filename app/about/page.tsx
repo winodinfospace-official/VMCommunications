@@ -80,7 +80,7 @@ export default function AboutPage() {
           <Reveal>
             <SectionEyebrow>LEADERSHIP</SectionEyebrow>
             <h2 className="font-display text-4xl lg:text-5xl text-ink font-light max-w-2xl">
-              Partners.
+              Founders.
             </h2>
           </Reveal>
           <div className="grid sm:grid-cols-2 gap-10 mt-14 max-w-3xl">
