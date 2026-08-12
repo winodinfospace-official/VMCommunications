@@ -8,7 +8,7 @@ export default function HomePage() {
   return (
     <>
       {/* HERO */}
-      <section className="hero-bg grain relative min-h-screen flex items-end pb-20 pt-40">
+      <section className="hero-bg grain relative min-h-[92vh] lg:min-h-screen flex items-center lg:items-end pb-16 lg:pb-20 pt-32 lg:pt-40">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 w-full">
           <Reveal>
             <p className="text-gold text-xs tracking-[0.35em] mb-6">

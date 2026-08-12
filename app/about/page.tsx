@@ -10,13 +10,13 @@ export const metadata: Metadata = { title: "About — Vision Media Communication
 const partners = [
   {
     name: "Hanumatharaja Y K",
-    role: "Proprietor",
+    role: "Founder",
     photo: "/team/hanumantharaja.jpg",
-    bio: "",
+    bio: "Engineering and industrial operations professional with extensive expertise in manufacturing, plant management, production engineering, quality systems, automotive components and industrial supplies.",
   },
   {
     name: "Dr. Shalini R",
-    role: "Proprietor",
+    role: "Founder",
     photo: "/team/shalini.jpg",
     bio: "Communications and digital media professional with expertise in strategic communication, IEC campaigns, content, research and social media.",
   },
