@@ -72,8 +72,9 @@ export default function HomePage() {
                   <div className="w-10 h-10 rounded-full border border-gold" />
                 </div>
               </div>
-              <div className="absolute bottom-6 left-6 right-6 border-t border-ivory/15 pt-4">
-                <p className="text-ivory/50 text-[11px] tracking-[0.2em]">MEDIA & CAMPAIGN VISUAL — PLACEHOLDER</p>
+              <div className="absolute bottom-6 left-6 right-6 border-t border-ivory/15 pt-5">
+                <p className="text-ivory text-lg font-display leading-snug">13 disciplines.</p>
+                <p className="text-ivory/60 text-[13px] mt-1">One communication team, end to end.</p>
               </div>
             </div>
           </Reveal>
