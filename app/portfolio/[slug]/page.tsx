@@ -19,7 +19,7 @@ export default function PortfolioDetailPage({ params }: { params: { slug: string
           <p className="text-gold text-xs tracking-[0.35em] mt-8 mb-4">{item.category.toUpperCase()}</p>
           <h1 className="font-display text-ivory text-4xl lg:text-5xl font-light leading-tight">{item.title}</h1>
           <div className="aspect-video bg-navy border border-ivory/10 mt-10 flex items-center justify-center">
-            <p className="text-ivory/40 text-xs tracking-[0.2em]">PROJECT MEDIA — PLACEHOLDER</p>
+            <p className="text-ivory/40 text-xs tracking-[0.2em]">PROJECT MEDIA</p>
           </div>
           <p className="text-ivory/65 leading-relaxed mt-10 max-w-xl">{item.description}</p>
         </Reveal>
