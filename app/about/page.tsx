@@ -42,7 +42,7 @@ export default function AboutPage() {
           </Reveal>
           <Reveal delay={80} className="bg-charcoal p-10 lg:p-14">
             <p className="text-gold text-xs tracking-[0.3em] mb-5">MISSION</p>
-            <ul className="space-y-4 text-ivory/80 text-[15px] leading-relaxed">
+            <ul className="space-y-4 font-display text-2xl lg:text-3xl text-ivory font-light leading-snug">
               <li>Deliver innovative communication solutions.</li>
               <li>Build meaningful public engagement.</li>
               <li>Support awareness and behaviour change campaigns.</li>

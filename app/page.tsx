@@ -8,7 +8,7 @@ export default function HomePage() {
   return (
     <>
       {/* HERO */}
-      <section className="hero-bg grain relative min-h-[92vh] lg:min-h-screen flex items-center lg:items-end pb-16 lg:pb-20 pt-32 lg:pt-40">
+      <section className="hero-bg grain relative min-h-[75vh] lg:min-h-[85vh] flex items-center pb-16 pt-32 lg:pt-40">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 w-full">
           <Reveal>
             <p className="text-gold text-xs tracking-[0.35em] mb-6">
@@ -19,10 +19,7 @@ export default function HomePage() {
             <h1 className="font-display text-ivory text-[13vw] leading-[0.95] sm:text-[9vw] lg:text-[6.2vw] font-light tracking-tight">
               Empowering Brands.
               <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-goldlight via-gold to-blue">
-                Connecting
-              </span>{" "}
-              People.
+              Connecting People.
             </h1>
           </Reveal>
           <Reveal delay={160}>
