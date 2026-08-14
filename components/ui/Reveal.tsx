@@ -12,11 +12,23 @@ export default function Reveal({
   className?: string;
 }) {
   const ref = useRef<HTMLDivElement>(null);
-  const [visible, setVisible] = useState(false);
+  // Default to VISIBLE. This is what renders on the server and on first
+  // paint, so content is never hidden behind JavaScript that hasn't run
+  // yet — no blank hero, no blank headings, on any device or connection.
+  const [visible, setVisible] = useState(true);
 
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
+
+    // Only content that starts BELOW the fold gets the fade-up animation.
+    // Anything already on screen at load stays visible the whole time.
+    const rect = el.getBoundingClientRect();
+    const alreadyInView = rect.top < window.innerHeight * 0.9;
+    if (alreadyInView) return;
+
+    setVisible(false);
+
     const io = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -26,10 +38,18 @@ export default function Reveal({
           }
         });
       },
-      { threshold: 0.15 }
+      { threshold: 0, rootMargin: "0px 0px -10% 0px" }
     );
     io.observe(el);
-    return () => io.disconnect();
+
+    // Safety net: if the observer never fires, show the content anyway.
+    // Content should never be able to get permanently stuck invisible.
+    const fallback = setTimeout(() => setVisible(true), 1200);
+
+    return () => {
+      io.disconnect();
+      clearTimeout(fallback);
+    };
   }, []);
 
   return (
