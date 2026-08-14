@@ -30,8 +30,16 @@ export default function ContactPage() {
               <p className="text-blue text-xs tracking-[0.3em] mb-3">EMAIL</p>
               <p className="text-ink/70 text-[15px]">visionmediacommunications2026@gmail.com</p>
             </Reveal>
-            <Reveal delay={180} className="aspect-video bg-navy/5 border border-ink/10 flex items-center justify-center">
-              <p className="text-ink/35 text-xs tracking-[0.2em]">MAP EMBED — PLACEHOLDER (add once address confirmed)</p>
+            <Reveal delay={180} className="aspect-video border border-ink/10 overflow-hidden">
+              <iframe
+                title="Vision Media Communications office location"
+                src="https://www.google.com/maps?q=%23T4%2FD%2C+1st+Main+Road%2C+Peenya+Police+Station+Road%2C+Peenya+Industrial+Area%2C+1st+Stage%2C+Peenya%2C+Bengaluru+-+560058&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </Reveal>
           </div>
 
