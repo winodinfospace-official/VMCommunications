@@ -1,19 +1,16 @@
-# Vision Media Communications — Simple UI Redesign
+# Vision Media Communications — Final UI/UX Redesign
 
-This version keeps the existing Vision Media content/data and routes, while redesigning the homepage, navigation, footer and global visual language in a warm editorial style inspired by the client's Samvada Baduku reference.
+This version retains the existing Vision Media Communications content, routes, data files, contact details and image assets while refining the visual system into a cleaner premium editorial direction.
+
+## Updated
+- Premium editorial typography and spacing
+- Refined cream / terracotta / olive palette
+- Cleaner responsive navigation and footer
+- Founder portraits displayed without forced cropping
+- Hero typography and annotation kept within frame on desktop and mobile
+- Founder names use a stable serif treatment to avoid distorted glyphs
+- Services, IEC, portfolio, clients and CTA sections retained
+- Existing contact/address details retained
 
 ## Important
-This is a Next.js project. For the existing Vercel/GitHub setup, the homepage is `app/page.tsx` — not `index.html`.
-
-Existing service, portfolio, client, careers and contact data files are retained.
-
-## Local preview
-Use Command Prompt if PowerShell blocks npm scripts:
-
-```cmd
-npm.cmd install
-npm.cmd run dev
-```
-
-## Deployment
-Commit/push the project to the existing GitHub repository. Vercel will rebuild the existing deployment.
+This is a Next.js project. The homepage is `app/page.tsx`; do not replace the project with a standalone `index.html`.
