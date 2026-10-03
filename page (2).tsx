@@ -86,8 +86,8 @@ export default function AboutPage() {
           <div className="grid sm:grid-cols-2 gap-10 mt-14 max-w-3xl">
             {partners.map((p, i) => (
               <Reveal key={p.name} delay={i * 100}>
-                <div className="relative aspect-[4/5] mb-6 overflow-hidden bg-navy">
-                  <Image src={p.photo} alt={p.name} fill className="object-cover" />
+                <div className="vm-about-founder-photo mb-6">
+                  <Image src={p.photo} alt={p.name} width={p.name.startsWith("Hanum") ? 638 : 800} height={p.name.startsWith("Hanum") ? 800 : 640} sizes="(max-width: 640px) 100vw, 50vw" className="vm-about-founder-image" />
                 </div>
                 <p className="font-display text-xl text-ink">{p.name}</p>
                 <p className="text-gold text-xs tracking-[0.2em] mt-1 mb-3">{p.role.toUpperCase()}</p>

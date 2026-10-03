@@ -51,7 +51,7 @@ export default function HomePage() {
             <div className="vm-art-frame">
               <div className="vm-art-grid" />
               <div className="vm-art-word">VISION</div>
-              <div className="vm-art-caption">COMMUNICATION<br />THAT CONNECTS.</div>
+              <div className="vm-art-caption-wrap"><div className="vm-art-caption"><span>Communication</span><span>that connects.</span></div></div>
               <div className="vm-art-line" />
             </div>
             <div className="vm-art-small vm-art-small-one">MEDIA</div>
