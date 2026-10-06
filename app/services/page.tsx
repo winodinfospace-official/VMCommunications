@@ -22,7 +22,7 @@ export default function ServicesPage() {
                 <div className="border-t border-ink/10 pt-6">
                   <div className="flex items-baseline gap-4 mb-3">
                     <span className="font-display text-gold text-sm">{s.num}</span>
-                    <h2 className="font-display text-2xl text-ink font-light">{s.title}</h2>
+                    <h2 className="font-display text-2xl text-ink font-medium">{s.title}</h2>
                   </div>
                   <p className="text-ink/60 text-[15px] leading-relaxed mb-4">{s.desc}</p>
                   <ul className="space-y-1.5">

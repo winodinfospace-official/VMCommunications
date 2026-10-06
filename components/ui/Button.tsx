@@ -8,7 +8,7 @@ type Props = {
 };
 
 export default function Button({ href, children, variant = "gold", className = "" }: Props) {
-  const base = "inline-flex items-center gap-2 text-sm font-medium px-7 py-3.5 tracking-wide transition-colors";
+  const base = "inline-flex items-center gap-2 text-sm font-medium px-7 py-3.5 font-semibold transition-colors";
 
   if (variant === "gold") {
     return (

@@ -9,7 +9,7 @@ export default function StatBlock() {
         {stats.map((label, i) => (
           <Reveal key={label} delay={i * 80} className="text-center lg:text-left">
             <p className="font-display text-5xl lg:text-6xl text-ink">XX+</p>
-            <p className="mt-3 text-ink/60 text-xs tracking-[0.2em]">{label}</p>
+            <p className="mt-3 text-ink/60 text-xs ">{label}</p>
           </Reveal>
         ))}
       </div>

@@ -54,7 +54,7 @@ export default function GovIECPage() {
         <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
           <Reveal>
             <SectionEyebrow tone="gold">CAPABILITIES</SectionEyebrow>
-            <h2 className="font-display text-4xl text-ivory font-light max-w-xl">Built for public-sector communication.</h2>
+            <h2 className="font-display text-4xl text-ivory font-medium max-w-xl">Built for public-sector communication.</h2>
           </Reveal>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-12 mt-14">
             {capabilities.map((c, i) => (

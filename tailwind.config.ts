@@ -5,17 +5,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        navy: "#0E1A3D",
-        charcoal: "#152244",
-        gold: "#C6A15B",
-        goldlight: "#E4CE9C",
-        blue: "#2E5FE8",
-        ivory: "#F7F4EC",
-        ink: "#0D0F14",
+        navy: "#0F2A2B",
+        charcoal: "#163B3D",
+        gold: "#F0A81A",
+        goldlight: "#F7CF73",
+        blue: "#163B3D",
+        ivory: "#F2F1EA",
+        ink: "#0E1F20",
       },
       fontFamily: {
-        display: ["var(--font-fraunces)", "serif"],
-        body: ["var(--font-inter)", "sans-serif"],
+        display: ["var(--font-display)", "serif"],
+        body: ["var(--font-body)", "sans-serif"],
       },
       keyframes: {
         irisGrow: {

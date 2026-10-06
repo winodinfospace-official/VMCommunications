@@ -34,15 +34,15 @@ export default function AboutPage() {
       <section className="bg-ivory py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-16">
           <Reveal className="bg-navy p-10 lg:p-14">
-            <p className="text-gold text-xs tracking-[0.3em] mb-5">VISION</p>
-            <p className="font-display text-2xl lg:text-3xl text-ivory font-light leading-snug">
+            <p className="text-gold text-xs font-medium mb-5">VISION</p>
+            <p className="font-display text-2xl lg:text-3xl text-ivory font-medium leading-snug">
               To become a trusted communication partner delivering innovative digital, media and IEC
               solutions that create measurable social and business impact.
             </p>
           </Reveal>
           <Reveal delay={80} className="bg-charcoal p-10 lg:p-14">
-            <p className="text-gold text-xs tracking-[0.3em] mb-5">MISSION</p>
-            <ul className="space-y-4 font-display text-2xl lg:text-3xl text-ivory font-light leading-snug">
+            <p className="text-gold text-xs font-medium mb-5">MISSION</p>
+            <ul className="space-y-4 font-display text-2xl lg:text-3xl text-ivory font-medium leading-snug">
               <li>Deliver innovative communication solutions.</li>
               <li>Build meaningful public engagement.</li>
               <li>Support awareness and behaviour change campaigns.</li>
@@ -56,7 +56,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <Reveal>
             <SectionEyebrow>OUR APPROACH</SectionEyebrow>
-            <h2 className="font-display text-4xl lg:text-5xl text-ink font-light max-w-2xl">
+            <h2 className="font-display text-4xl lg:text-5xl text-ink font-medium max-w-2xl">
               Strategy first. Craft always.
             </h2>
           </Reveal>
@@ -79,7 +79,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <Reveal>
             <SectionEyebrow>LEADERSHIP</SectionEyebrow>
-            <h2 className="font-display text-4xl lg:text-5xl text-ink font-light max-w-2xl">
+            <h2 className="font-display text-4xl lg:text-5xl text-ink font-medium max-w-2xl">
               Founders.
             </h2>
           </Reveal>
@@ -87,10 +87,10 @@ export default function AboutPage() {
             {partners.map((p, i) => (
               <Reveal key={p.name} delay={i * 100}>
                 <div className="relative aspect-[4/5] mb-6 overflow-hidden bg-navy">
-                  <Image src={p.photo} alt={p.name} fill className="object-cover" />
+                  <Image src={p.photo} alt={p.name} fill sizes="(max-width: 640px) 100vw, 360px" className="object-cover object-top" />
                 </div>
                 <p className="font-display text-xl text-ink">{p.name}</p>
-                <p className="text-gold text-xs tracking-[0.2em] mt-1 mb-3">{p.role.toUpperCase()}</p>
+                <p className="text-gold text-xs mt-1 mb-3 font-medium">{p.role}</p>
                 {p.bio && <p className="text-ink/60 text-sm leading-relaxed">{p.bio}</p>}
               </Reveal>
             ))}
@@ -117,7 +117,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 hero-bg opacity-90" />
         <div className="relative max-w-4xl mx-auto px-6 text-center">
           <Reveal>
-            <h2 className="font-display text-3xl sm:text-4xl text-ivory font-light">Let&apos;s build something credible.</h2>
+            <h2 className="font-display text-3xl sm:text-4xl text-ivory font-medium">Let&apos;s build something credible.</h2>
             <div className="mt-8">
               <Button href="/contact">Start a Project</Button>
             </div>

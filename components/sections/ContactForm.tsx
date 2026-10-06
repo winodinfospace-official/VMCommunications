@@ -17,7 +17,7 @@ export default function ContactForm() {
   if (submitted) {
     return (
       <div className="border border-ink/10 p-10">
-        <p className="font-display text-2xl text-ink font-light">Thank you.</p>
+        <p className="font-display text-2xl text-ink font-medium">Thank you.</p>
         <p className="text-ink/60 text-sm mt-3">We&apos;ve received your enquiry and will be in touch shortly.</p>
       </div>
     );

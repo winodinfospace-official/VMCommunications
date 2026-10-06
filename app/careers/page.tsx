@@ -23,7 +23,7 @@ export default function CareersPage() {
 
           {jobOpenings.length === 0 ? (
             <Reveal delay={80} className="border border-ink/10 p-10 lg:p-14 mt-6">
-              <p className="font-display text-2xl text-ink font-light">No current openings.</p>
+              <p className="font-display text-2xl text-ink font-medium">No current openings.</p>
               <p className="text-ink/60 text-sm mt-4 max-w-md">
                 Send us your profile for future opportunities — we&apos;ll reach out when a role opens that fits.
               </p>

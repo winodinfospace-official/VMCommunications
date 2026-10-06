@@ -13,10 +13,10 @@ export default function PageHero({
     <section className="hero-bg grain relative pt-44 pb-20 lg:pt-52 lg:pb-28">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <Reveal>
-          <p className="text-gold text-xs tracking-[0.35em] mb-6">{eyebrow}</p>
+          <p className="text-gold text-xs font-medium mb-6">{eyebrow}</p>
         </Reveal>
         <Reveal delay={80}>
-          <h1 className="font-display text-ivory text-5xl sm:text-6xl lg:text-7xl font-light leading-[1.05] max-w-3xl">
+          <h1 className="font-display text-ivory text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight leading-[1.02] max-w-3xl">
             {title}
           </h1>
         </Reveal>

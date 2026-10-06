@@ -8,13 +8,13 @@ export default function Footer() {
         <div className="vm-footer-brand">
           <Link href="/" className="vm-brand">
             <Image src="/logo.jpg" alt="Vision Media Communications" width={46} height={46} />
-            <span>VISION MEDIA<small>COMMUNICATIONS</small></span>
+            <span>Vision Media<small>Communications</small></span>
           </Link>
           <p>Creative communication and integrated digital, media and IEC solutions for government, NGO, education and private-sector partners.</p>
         </div>
 
         <div>
-          <h4>QUICK LINKS</h4>
+          <h4>Quick links</h4>
           <Link href="/about">About</Link>
           <Link href="/services">Services</Link>
           <Link href="/government-iec">Government IEC</Link>
@@ -22,13 +22,13 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4>CONTACT</h4>
+          <h4>Contact</h4>
           <Link href="/contact">Get in Touch</Link>
           <p>For project enquiries, partnerships and communication requirements, speak with our team.</p>
         </div>
 
         <div>
-          <h4>GET IN TOUCH</h4>
+          <h4>Get in touch</h4>
           <p>#T4/D, 1st Main Road, Peenya Police Station Road, Peenya Industrial Area, 1st Stage, Peenya, Bengaluru - 560 058</p>
           <p>+91 93435 43773<br />+91 99646 01753</p>
           <p>visionmediacommunications2026@gmail.com</p>
@@ -36,7 +36,7 @@ export default function Footer() {
       </div>
       <div className="vm-footer-bottom">
         <span>© {new Date().getFullYear()} Vision Media Communications. All rights reserved.</span>
-        <span>Strategy · Creativity · Communication</span>
+        <span>Strategy, creativity, communication</span>
       </div>
     </footer>
   );

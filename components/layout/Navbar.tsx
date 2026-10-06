@@ -29,7 +29,7 @@ export default function Navbar() {
         <div className="vm-nav-inner">
           <Link href="/" className="vm-brand" aria-label="Vision Media Communications home">
             <Image src="/logo.jpg" alt="Vision Media Communications" width={46} height={46} priority />
-            <span>VISION MEDIA<small>COMMUNICATIONS</small></span>
+            <span>Vision Media<small>Communications</small></span>
           </Link>
 
           <nav className="vm-nav-links" aria-label="Primary navigation">

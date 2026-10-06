@@ -14,7 +14,7 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-16">
           <div className="lg:col-span-5 space-y-10">
             <Reveal>
-              <p className="text-blue text-xs tracking-[0.3em] mb-3">OFFICE</p>
+              <p className="text-blue text-xs  mb-3">OFFICE</p>
               <p className="text-ink/70 text-[15px]">
                 #T4/D, 1st Main Road, Peenya Police Station Road,
                 <br />
@@ -22,12 +22,12 @@ export default function ContactPage() {
               </p>
             </Reveal>
             <Reveal delay={60}>
-              <p className="text-blue text-xs tracking-[0.3em] mb-3">PHONE</p>
+              <p className="text-blue text-xs  mb-3">PHONE</p>
               <p className="text-ink/70 text-[15px]">+91 93435 43773</p>
               <p className="text-ink/70 text-[15px]">+91 99646 01753</p>
             </Reveal>
             <Reveal delay={120}>
-              <p className="text-blue text-xs tracking-[0.3em] mb-3">EMAIL</p>
+              <p className="text-blue text-xs  mb-3">EMAIL</p>
               <p className="text-ink/70 text-[15px]">visionmediacommunications2026@gmail.com</p>
             </Reveal>
             <Reveal delay={180} className="aspect-video border border-ink/10 overflow-hidden">
