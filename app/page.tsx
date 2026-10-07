@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import HeroArt from "@/components/ui/HeroArt";
+import ScrollMotion from "@/components/ui/ScrollMotion";
 import { services } from "@/data/services";
 import { portfolioItems } from "@/data/portfolio";
 
@@ -25,9 +27,12 @@ const pillars = [
   ["04", "Outreach", "Campaigns and public communication that reach communities."],
 ];
 
+const d = (i: number) => ({ "--d": `${i * 90}ms` } as React.CSSProperties);
+
 export default function HomePage() {
   return (
     <div className="vm-home">
+      <ScrollMotion />
       <section className="vm-hero">
         <div className="vm-container vm-hero-grid">
           <div className="vm-hero-copy">
@@ -41,11 +46,7 @@ export default function HomePage() {
               <Link href="/contact" className="vm-text-link">Let&apos;s Talk</Link>
             </div>
           </div>
-          <div className="vm-hero-art" aria-label="Vision Media Communications creative media production">
-            <div className="vm-art-card vm-art-one"><p className="vm-art-note">Communication that connects.</p><span>Media</span></div>
-            <div className="vm-art-card vm-art-two"><span>Story</span></div>
-            <div className="vm-art-card vm-art-three"><span>IEC</span></div>
-          </div>
+          <HeroArt />
         </div>
         <div className="vm-strip">
           {['Digital Marketing','Social Media','Branding','Films','Photography','Government IEC','Publications','Web Development'].map((item) => <span key={item}>{item}</span>)}
@@ -53,7 +54,7 @@ export default function HomePage() {
       </section>
 
       <section className="vm-section vm-about">
-        <div className="vm-container vm-two-col">
+        <div className="vm-container vm-two-col" data-reveal>
           <div>
             <p className="vm-kicker">Who we are</p>
             <h2>A communication partner from first thought to final frame.</h2>
@@ -68,24 +69,24 @@ export default function HomePage() {
 
       <section className="vm-section vm-pillars">
         <div className="vm-container">
-          <div className="vm-section-head">
+          <div className="vm-section-head" data-reveal>
             <div><p className="vm-kicker">How we work</p><h2>One team. Four connected capabilities.</h2></div>
             <p>From research and strategy to creative execution and public outreach, every part of the communication process works together.</p>
           </div>
           <div className="vm-pillar-grid">
-            {pillars.map(([num, title, desc]) => <div className="vm-pillar" key={num}><span>{num}</span><h3>{title}</h3><p>{desc}</p></div>)}
+            {pillars.map(([num, title, desc], i) => <div className="vm-pillar" key={num} data-reveal style={d(i)}><span>{num}</span><h3>{title}</h3><p>{desc}</p></div>)}
           </div>
         </div>
       </section>
 
       <section className="vm-section vm-services">
         <div className="vm-container">
-          <div className="vm-section-head">
+          <div className="vm-section-head" data-reveal>
             <div><p className="vm-kicker">Our services</p><h2>13 disciplines.<br />One communication team.</h2></div>
             <Link href="/services" className="vm-btn vm-btn-outline">View all services</Link>
           </div>
           <div className="vm-service-list">
-            {services.map((service) => <Link href="/services" className="vm-service" key={service.num}><strong>{service.title}</strong><p>{service.desc}</p></Link>)}
+            {services.map((service, i) => <Link href="/services" className="vm-service" key={service.num} data-reveal style={d(i % 4)}><strong>{service.title}</strong><p>{service.desc}</p></Link>)}
           </div>
         </div>
       </section>
@@ -93,27 +94,27 @@ export default function HomePage() {
       <section className="vm-iec">
         <div className="vm-container vm-iec-grid">
           <div><p className="vm-kicker light">Government IEC</p><h2>Communication for a stronger, more aware society.</h2><p>IEC — Information, Education, Communication — translates policy and public priorities into messages people understand, trust, and act on.</p><Link href="/government-iec" className="vm-btn vm-btn-light">Explore Government IEC</Link></div>
-          <div className="vm-iec-steps">{['Research','Strategy','Content','Creative','Media','Public Outreach','Measurement'].map((step, i) => <div key={step}><span>{String(i+1).padStart(2,'0')}</span>{step}</div>)}</div>
+          <div className="vm-iec-steps">{['Research','Strategy','Content','Creative','Media','Public Outreach','Measurement'].map((step, i) => <div key={step} data-reveal style={d(i)}><span>{String(i+1).padStart(2,'0')}</span>{step}</div>)}</div>
         </div>
       </section>
 
       <section className="vm-section vm-work">
         <div className="vm-container">
-          <div className="vm-section-head"><div><p className="vm-kicker">Selected work</p><h2>Communication built for real audiences.</h2></div><Link href="/portfolio" className="vm-text-link dark">View portfolio</Link></div>
+          <div className="vm-section-head" data-reveal><div><p className="vm-kicker">Selected work</p><h2>Communication built for real audiences.</h2></div><Link href="/portfolio" className="vm-text-link dark">View portfolio</Link></div>
           <div className="vm-work-grid">
-            {portfolioItems.slice(0, 4).map((item, i) => <Link href={`/portfolio/${item.slug}`} key={item.slug} className={`vm-work-card vm-work-${i+1}`}><span>{item.category}</span><h3>{item.title}</h3><p>{item.description}</p></Link>)}
+            {portfolioItems.slice(0, 4).map((item, i) => <Link href={`/portfolio/${item.slug}`} key={item.slug} className={`vm-work-card vm-work-${i+1}`} data-reveal style={d(i % 2)}><span>{item.category}</span><h3>{item.title}</h3><p>{item.description}</p></Link>)}
           </div>
         </div>
       </section>
 
       <section className="vm-section vm-founders">
         <div className="vm-container">
-          <div className="vm-section-head"><div><p className="vm-kicker">The people</p><h2>Founders.</h2></div><p>Leadership combining communication, digital media and operational experience.</p></div>
-          <div className="vm-founder-grid">{founders.map((person) => <div className="vm-founder" key={person.name}><div className="vm-founder-photo"><Image src={person.photo} alt={person.name} fill sizes="(max-width: 768px) 100vw, 440px" priority /></div><p className="vm-founder-role">{person.role}</p><h3>{person.name}</h3><p>{person.bio}</p></div>)}</div>
+          <div className="vm-section-head" data-reveal><div><p className="vm-kicker">The people</p><h2>Founders.</h2></div><p>Leadership combining communication, digital media and operational experience.</p></div>
+          <div className="vm-founder-grid">{founders.map((person, i) => <div className="vm-founder" key={person.name} data-reveal style={d(i)}><div className="vm-founder-photo"><Image src={person.photo} alt={person.name} fill sizes="(max-width: 768px) 100vw, 440px" priority /></div><p className="vm-founder-role">{person.role}</p><h3>{person.name}</h3><p>{person.bio}</p></div>)}</div>
         </div>
       </section>
 
-      <section className="vm-cta"><div className="vm-container vm-cta-inner"><div><p className="vm-kicker light">Let&apos;s work together</p><h2>Your idea deserves a clear voice.</h2><p>Let&apos;s turn ideas into communication that connects with people.</p></div><Link href="/contact" className="vm-btn vm-btn-light">Start a Project</Link></div></section>
+      <section className="vm-cta"><div className="vm-container vm-cta-inner" data-reveal><div><p className="vm-kicker light">Let&apos;s work together</p><h2>Your idea deserves a clear voice.</h2><p>Let&apos;s turn ideas into communication that connects with people.</p></div><Link href="/contact" className="vm-btn vm-btn-light">Start a Project</Link></div></section>
     </div>
   );
 }
