@@ -23,8 +23,8 @@ export default function ContactPage() {
             </Reveal>
             <Reveal delay={60}>
               <p className="text-blue text-xs  mb-3">PHONE</p>
-              <p className="text-ink/70 text-[15px]">+91 93435 43773</p>
               <p className="text-ink/70 text-[15px]">+91 99646 01753</p>
+              <p className="text-ink/70 text-[15px]">+91 93435 43773</p>
             </Reveal>
             <Reveal delay={120}>
               <p className="text-blue text-xs  mb-3">EMAIL</p>

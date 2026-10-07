@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { services } from "@/data/services";
-import { clients, clientGroups } from "@/data/clients";
 import { portfolioItems } from "@/data/portfolio";
 
 const founders = [
@@ -111,13 +110,6 @@ export default function HomePage() {
         <div className="vm-container">
           <div className="vm-section-head"><div><p className="vm-kicker">The people</p><h2>Founders.</h2></div><p>Leadership combining communication, digital media and operational experience.</p></div>
           <div className="vm-founder-grid">{founders.map((person) => <div className="vm-founder" key={person.name}><div className="vm-founder-photo"><Image src={person.photo} alt={person.name} fill sizes="(max-width: 768px) 100vw, 440px" priority /></div><p className="vm-founder-role">{person.role}</p><h3>{person.name}</h3><p>{person.bio}</p></div>)}</div>
-        </div>
-      </section>
-
-      <section className="vm-section vm-clients">
-        <div className="vm-container">
-          <p className="vm-kicker">Client ecosystem</p><h2>Built to work across sectors.</h2>
-          <div className="vm-client-groups">{clientGroups.map(group => <div key={group}><strong>{group}</strong><ul>{clients.filter(c => c.group === group).map(c => <li key={c.name}>{c.name}</li>)}</ul></div>)}</div>
         </div>
       </section>
 

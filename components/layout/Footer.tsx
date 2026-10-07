@@ -30,7 +30,7 @@ export default function Footer() {
         <div>
           <h4>Get in touch</h4>
           <p>#T4/D, 1st Main Road, Peenya Police Station Road, Peenya Industrial Area, 1st Stage, Peenya, Bengaluru - 560 058</p>
-          <p>+91 93435 43773<br />+91 99646 01753</p>
+          <p>+91 99646 01753<br />+91 93435 43773</p>
           <p>visionmediacommunications2026@gmail.com</p>
         </div>
       </div>
